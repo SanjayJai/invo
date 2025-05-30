@@ -16,6 +16,8 @@
     <!-- General CSS Files -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/third-party.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ mix('assets/css/page.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     @if (!Auth::user()->dark_mode)
         <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/plugins.css') }}">
@@ -35,6 +37,10 @@
     </script>
     <script src="{{ asset('assets/js/third-party.js') }}"></script>
     <script src="{{ asset('messages.js') }}"></script>
+
+
+
+    
     <script data-turbo-eval="false">
         let sweetAlertIcon = "{{ asset('images/remove.png') }}";
         let decimalsSeparator = "{{ getSettingValue('decimal_separator') }}";

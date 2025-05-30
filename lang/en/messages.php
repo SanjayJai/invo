@@ -290,6 +290,7 @@ return [
         'state' => 'State',
         'country' => 'Country',
         'created_at' => 'Date',
+        'add'=> 'Add Client',
     ],
 
     'category' => [
